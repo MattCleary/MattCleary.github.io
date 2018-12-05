@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Matthew Cleary</title>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/hover.css" rel="stylesheet" media="all">  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cv.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"> <img src="images/profile.jpg" alt="Avatar" class="avatarnav"> Matthew Cleary </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#work">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-white">
+      <div class="container-fluid text-center">
+        <img class="img-responsive w3-animate-right" src="images/profile.jpg" alt="Avatar" id="avatarhead">
+        <h2>Matthew Cleary</h2>
+        <h4>Final Year Computer Science Student</h4>
+      </div>
+      <div class="col-md-8 mx-auto text-center">
+        <button type="submit" class="btn" style="margin: 5%"  onclick="window.open('CVForMatthewCleary.docx')"> <i class="fa fa-file-text-o" style="font-size:24px;"></i> Download My CV</button>
+        <button type="submit" class="btn" style="margin: 5%"  onclick="window.location.href='#contact'"> <i class="fa fa-address-card-o" style="font-size:24px"></i> Contact Me</button>
+      </div>
+      <div class="col-md-8 mx-auto text-center">
+        <a class="LI-simple-link" href='www.linkedin.com/in/matthewcleary96' target="_blank"><i class="fa fa-linkedin-square" style="font-size:50px"></i></a>
+        <a class="git-simple-link" href='https://github.com/MattCleary' target="_blank"><i class="fa fa-git" style="font-size:50px; margin-left: 3%"></i></a>
+        </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto" style="margin-bottom: 4%">
+            <h3>About me</h3>
+          </div>
+          <div class="col-md-8 mx-auto" style="margin-bottom: 4%">
+            <p id="content">My name is Matthew Cleary. I am a 22 year old Data Analytics student in IT Tallght. <br>
+              Currently I am in my final year of my Bachelors Degree. For the first three years of my degree, I persued Software Deveopment.
+              I recieved good grades and secured a six-month intership with Bank of America Merill Lynch, as a result.<span id="dots">...</span><span id="more">
+              After completing my internship, I realised I did not enjoy development as much as I thought. 
+              I considered whether I wanted to contiue with development for some time. When college started back, there was the option of doing Data Analytics.
+              I decided to take on the opportunity and specialise in Data Analytics for my final year.</span>
+            </p>       
+          </div>
+          <div class="col-md-8 mx-auto" style="margin-bottom: 4%">
+            <button class="btn" style="color: white" onclick="showMore()" id="show-more">Show More</button>
+          </div>
+          <div class="col-lg-8 mx-auto" style="margin-bottom: 4%">
+              <div id="carousel" class="carousel slide" data-ride="carousel" style="margin-top: 10%">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="images/baml.png" alt="First slide" style="height:50%">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/itt.png" alt="Second slide"  style="height:50%">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h3>Education</h3>
+          </div>
+        <div class="row">
+          <div class="zoom">
+            <img class="img-circle" src="images/grad.png" alt="grad" style="width:80%">
+            <h6>Current GPA: x.xx</h6>
+          </div>
+          <div class="zoom">
+            <img class="img-circle" src="images/grad.png" alt="grad" style="width:80%">
+            <h6>Average GPA: 3.16</h6>
+          </div>
+        </div>
+          </div>
+          <div class="col-md-8 mx-auto" id="results">
+              <h5>Academic results: </h5>     
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a data-toggle="tab" href="#year4"><strong>Year 4</strong></a></li>
+                <li><a data-toggle="tab" href="#year3"><strong>Year 3</strong></a></li>
+                <li><a data-toggle="tab" href="#year2"><strong>Year 2</strong></a></li>
+                <li><a data-toggle="tab" href="#year1"><strong>Year 1</strong></a></li>
+              </ul>              
+              <div class="tab-content">
+                <div id="year4" class="tab-pane active">
+                  <h5>Year 4</h5>
+                  <table class="table borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td><strong>Winter Semester</td>
+                          <td></td>                        
+                      </tr>
+                      <tr>
+                        <td>Interactive Media Design & Visualisation</td>
+                        <td>X</td>                        
+                      </tr>
+                      <tr>
+                        <td>Social Media Analysis</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Applied Machine Learning</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>Information Management</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>IoT & Security</td>
+                        <td>X</td>
+                      </tr>
+                      <tr>
+                        <td>4th Year Project</td>
+                        <td>X</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="year3" class="tab-pane fade">
+                  <h5>Year 3</h5>
+                  <table class="table borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Spring Semester</td>
+                            <td></td>                        
+                        </tr>
+                      <tr>
+                        <td>Industrial Placement</td>
+                        <td>Pass (30 credits)</td>                        
+                      </tr>
+                      <tr>
+                          <td><strong>Winter Semester</td>
+                          <td></td>                        
+                      </tr>
+                      <tr>
+                        <td>Web Application Development</td>
+                        <td>C+</td>
+                      </tr>
+                      <tr>
+                        <td>Operating Systems</td>
+                        <td>B</td>
+                      </tr>
+                      <tr>
+                        <td>Cloud Computing</td>
+                        <td>B-</td>
+                      </tr>
+                      <tr>
+                        <td>Advanced Databases</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Data Structures and Algorithms</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Data Analysis</td>
+                        <td>B</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="year2" class="tab-pane fade">
+                  <h5>Year 2</h5>
+                  <table class="table borderless table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Spring Semester</td>
+                            <td></td>                        
+                        </tr>
+                      <tr>
+                        <td>Software Development 4</td>
+                        <td>B+</td>                        
+                      </tr>
+                      <tr>
+                        <td>Project</td>
+                        <td>A</td>                        
+                      </tr>
+                      <tr>
+                        <td>Networking 2</td>
+                        <td>A</td>                        
+                      </tr>
+                      <tr>
+                        <td>Management Science</td>
+                        <td>A</td>                        
+                      </tr>
+                      <tr>
+                        <td>Object Oriented Analysis and Design</td>
+                        <td>C</td>                        
+                      </tr>
+                      <tr>
+                        <td>Information Security</td>
+                        <td>B</td>                        
+                      </tr>
+                      <tr>
+                          <td><strong>Winter Semester</td>
+                          <td></td>                        
+                      </tr>
+                      <tr>
+                          <td>Software Development 3</td>
+                          <td>B+</td>                        
+                      </tr>
+                      <tr>
+                          <td>Software Quality Assurance and Testing</td>
+                          <td>B</td>                        
+                      </tr>
+                      <tr>
+                          <td>Networking 1</td>
+                          <td>B-</td>                        
+                      </tr>
+                      <tr>
+                          <td>Database Design and Programming</td>
+                          <td>C+</td>                        
+                      </tr>
+                      <tr>
+                          <td>Discrete Mathematics</td>
+                          <td>A</td>                        
+                      </tr>
+                      <tr>
+                          <td>Web and Mobile Design and Development</td>
+                          <td>B</td>                        
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="year1" class="tab-pane fade">
+                    <h5>Year 1</h5>
+                    <table class="table borderless table-sm">
+                      <thead>
+                        <tr>
+                          <th scope="col">Subject</th>
+                          <th scope="col">Grade</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td><strong>Spring Semester</td>
+                              <td></td>                        
+                          </tr>
+                          <tr>
+                              <td>Software Development 2</td>
+                              <td>B+</td>                        
+                          </tr>
+                          <tr>
+                              <td>Object Oriented System Analysis</td>
+                              <td>C+</td>                        
+                          </tr>
+                          <tr>
+                              <td>Social Media Communications</td>
+                              <td>B+</td>                        
+                          </tr>
+                          <tr>
+                              <td>Statistics</td>
+                              <td>B+</td>                        
+                          </tr>
+                          <tr>
+                              <td>Database Fundamentals</td>
+                              <td>A</td>                        
+                          </tr>
+                          <tr>
+                              <td>Operating Systems Fundamentals</td>
+                              <td>B-</td>                        
+                          </tr>
+                          <tr>
+                              <td><strong>Winter Semester</td>
+                              <td></td>                        
+                          </tr>
+                          <tr>
+                              <td>Software Development 1</td>
+                              <td>A</td>                        
+                          </tr>
+                          <tr>
+                              <td>Computer Architecture</td>
+                              <td>B</td>                        
+                          </tr>
+                          <tr>
+                              <td>Fundamentals of Interface and Web</td>
+                              <td>B-</td>                        
+                          </tr>
+                          <tr>
+                              <td>Business and Information Systems</td>
+                              <td>B</td>                        
+                          </tr><tr>
+                              <td>Discrete Mathematics</td>
+                              <td>C</td>                        
+                          </tr>
+                          <tr>
+                              <td>Learning to Learn</td>
+                              <td>B+</td>                        
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h3>Skills</h3>
+            <p>I have gained many skills during my years in college and during my internship. Each year, I thrive to learn how to use even more technologies and gain more skills. 
+              When introduced to something new, I try to understand how it works to the best of my ability and use it as much as possible. Practice makes perfect.</p>
+          </div>
+          <div class="col-md-12 mx-auto" style="margin-top: 10%">
+              <span class="progress-title">Software Development (Java, C++, Scala, Python)</span>              
+              <span class="progress-percent">85%</span>
+              <img src="images/java.png" alt="Avatar" class="progress-img">
+                <div class="progress">
+                  <div class="progress-bar bg-secondary progress-bar-animated progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div> 
+                </div>
+              <span class="progress-title">Team Work</span>
+              <span class="progress-percent">75%</span>
+              <img src="images/team.png" alt="Avatar" class="progress-img">
+                <div class="progress">
+                  <div class="progress-bar bg-secondary progress-bar-animated progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+                </div>
+              <span class="progress-title">Leadership</span>
+              <span class="progress-percent">80%</span>
+              <img src="images/lead.png" alt="Avatar" class="progress-img">
+                <div class="progress">
+                  <div class="progress-bar bg-secondary progress-bar-animated progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+                </div>
+              <span class="progress-title">Linux</span>
+              <span class="progress-percent">60%</span>
+              <img src="images/linux.png" alt="Avatar" class="progress-img">
+                <div class="progress">
+                  <div class="progress-bar bg-secondary progress-bar-animated progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
+                </div>
+              <span class="progress-title">Data Analytics</span>
+              <span class="progress-percent">70%</span>
+              <img src="images/data.png" alt="Avatar" class="progress-img">
+                <div class="progress">
+                  <div class="progress-bar bg-secondary progress-bar-animated progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+                </div>
+              <span class="progress-title">Database (SQL, JDBC)</span>
+              <span class="progress-percent">75%</span>
+              <img src="images/db.png" alt="Avatar" class="progress-img">
+                <div class="progress">
+                  <div class="progress-bar bg-secondary progress-bar-animated progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+                </div>
+              <span class="progress-title">HTML, CSS, Bootstrap</span>
+              <span class="progress-percent">85%</span>
+              <img src="images/web.png" alt="Avatar" class="progress-img">
+                <div class="progress">
+                  <div class="progress-bar bg-secondary progress-bar-animated progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+              </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto" style="margin-bottom: 1%">
+              <h3>Projects</h3>          
+            </div>
+            <div class="col-sm-8 mx-auto">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin: 5%">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h5 class="panel-title text-center">
+                          <a role="button" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" href="#collapse1"><i class="fa fa-bar-chart-o"></i> Final Year Data Analytics Project</a>
+                        </h5>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse in active" role="tab-panel" aria-labelledby="headingOne">
+                        <div class="panel-body text-center">
+                          <img src="images/data.png" class="img-circle img-responsive" id="project-img">
+                          <p style="color: white;">I am currently working on my Final Year Data Analytics Project.
+                            I orignally had an idea but I recently discovered a large blocker that stopped me in my path.
+                            More ideas are coming about, and being finalised. My next step is to find a useable dataset to work with. 
+                            With this data, I plan to build several models and run tests on the data and come up with some predictions.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-8 mx-auto">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin: 5%">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h5 class="panel-title text-center">
+                          <a role="button" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" href="#collapse2"><i class="fa fa-ticket"></i> Ticket Store</a>
+                        </h5>
+                      </div>
+                      <div id="collapse2" class="panel-collapse collapse in" role="tab-panel" aria-labelledby="headingTwo">
+                        <div class="panel-body text-center">
+                          <img src="images/music.png" class="img-circle img-responsive" id="project-img">
+                          <p style="color: white;">Designed for our Second Year Project. 
+                            JavaPlay Framework CRUD Application. TicketStore is an online event booking system. Users can buy tickets for music, sporting, comedy events and more.
+                            TicketStore is complete with sign up, login, shopping cart, order details, conatct us, etc. It also includes full admin functionality. When an account is set to an admin role,
+                            that account will have special access to creating, updating and deleting events and tickets. They can also handle user queries, edit user settings and much more.
+                            We recieved an A for our efforts.
+                          </p>
+                          <a class="git-simple-link" href='https://github.com/MattCleary/TicketStore' target="_blank"><i class="fa fa-git" style="font-size:36px; margin: 3%"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-8 mx-auto">
+                <div class="panel-group"  id="accordion" role="tablist" aria-multiselectable="true" style="margin: 5%">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h5 class="panel-title text-center">
+                          <a data-toggle="collapse" href="#collapse3"><i class="fas fa-shoe-prints"></i> Sourced Soles</a>
+                        </h5>
+                      </div>
+                      <div id="collapse3" class="panel-collapse collapse in" role="tab-panel" aria-labelledby="headingThree">
+                        <div class="panel-body text-center">
+                          <img src="images/shoe.png" class="img-circle img-responsive" id="project-img">
+                          <p style="color: white;">Web Store developed using the Java Play Framework. 
+                            Developed in my First Year with two other Students, Sourced Soles is an only store where users could purchase hard to find shoes.
+                            The website has full checkout functionality as well as a complete order detail, sign up, login, and transaction history.
+                            We recieved an A grade for our efforts.
+                          </p>
+                          <a class="git-simple-link" href='https://github.com/MattCleary/SourcedSoles' target="_blank"><i class="fa fa-git" style="font-size:36px; margin: 3%"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>                    
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+          <div class="container">
+              <div class="col-sm-8 mx-auto" style="margin-bottom: 5%">
+                <h3>Work Experience</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <img class="card-img-top" src="images/baml.png">
+                  <div class="card-body">
+                    <h5 class="card-title">Bank of America Merrill Lynch</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">GMOT Securities (Feb. 2018 - Aug. 2018)</h6>
+                    <p class="card-text">This year, I completed a six-month internship with BAML, from February to August.
+                      I was part of their Securities division and a member of two teams who worked closely together. 
+                      I worked of various projects within and outside my team. Within the team, I was mainly involved with developing and maintaining a web application used to find trades.
+                      This app is used by BAML teams all around the world. The app is developed using Scala, this was a first for me. I learned the language quickly as I had previous experience in Java, I found Scala quite similar.
+                      I worked on an intern project with other interns, where I acted as the team lead. We had to create a dashboard for monitoring client money feeds withn the bank.
+                      I throughly wnjoyed my time on this project and loved being team lead. I recieved great feedback from my role in this project. It was a real success.
+                    </p>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <img class="card-img-top" src="images/dunnes.png" id="card2-img">
+                    <div class="card-body">
+                      <h5 class="card-title">Dunnes Stores</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Checkout Supervisor (Dec. 2015 - Jan. 2018)</h6>
+                      <p class="card-text" style="margin-bottom: 25%">I worked in Dunnes Stores Part-time for just over two years. I started off as a checkout operator for a few months.
+                        I was then moved to a more independent role as Self-Service Operator. During my time in this role I got to cover for the supervisors when needed.
+                        Whenever I got this chance, I took full advantage and showed how capable I was of fufilling the role day to day. My efforts were noted and I was made Supervisor.
+                        During my time as supervisor, I developed my teamwork and leadership skills. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto" id="contact-me">
+            <h3>Contact me</h3>
+            <p> Feel free to contact me at any time!</p>
+            <p> <i class="fa fa-location-arrow" style="color:white; margin-left: 2%"></i> Institute of Technology Tallght</p>
+            <p> <i class="fa fa-phone" style="color:white"></i>  085 7756 925  </p>
+            <p> <i class="fa fa fa-envelope" style="color:white"></i> matthew.cleary.96@gmail.com  </p>
+          </div>
+          <div class="col-md-8 mx-auto">        
+                <form id="reused_form" style="margin: 10%">
+                   <div class="form-group">
+                     <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                     <input type="text" name="name" class="form-control" placeholder="Enter Name" required>
+                   </div>
+                   <div class="form-group">
+                     <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                     <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
+                   </div>
+                   <div class="form-group">
+                     <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+                     <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea required>
+                   </div>
+
+                   <button type="button" class="btn" style="margin-left: 43%" data-toggle="modal" data-target="#myModal"> Send <i class='fas fa-check'></i></button>
+                    
+                    <div id="myModal" class="modal fade" role="dialog" style="margin-top: 20%">
+                      <div class="modal-dialog modal-sm">                        
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <p class="text-center" style="font-size: 20px"> Thank you for your message! </p>                             
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn" data-dismiss="modal">&times;Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </form>
+              </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-1 bg-dark">
+      <div class="container">
+          <p class="text-center" style="margin-bottom: 2%">Designed by Matthew Cleary, 2018</p>
+          <ul class="social_footer_ul" style="margin-left: 40%">
+          <li><a href='www.linkedin.com/in/matthewcleary96' target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/MattCleary" target="_blank"><i class="fab fa-git"></i></a></li>
+          </ul>
+      </div>       
+    </footer>
+      </footer> 
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+   
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/showmore.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/panel.js"></script>
+
+  </body>
+
+</html>
