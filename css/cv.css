@@ -176,9 +176,22 @@ table {
 	display: table;
 }
 
+.nav-tabs {
+	border: none;
+}
+
 #results h5 {
-	padding-top: 30px;
+	padding: 3%;
 	text-align: center;
+}
+
+#results h6 {
+	text-align: center;
+}
+
+#results h6:hover {	
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .progress {
@@ -300,4 +313,13 @@ p {
 #contact-me p:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+#myModal {
+	border-radius: 8px;
+}
+
+#myModay p {
+	color: grey;
+	font-size: 20px;
 }
