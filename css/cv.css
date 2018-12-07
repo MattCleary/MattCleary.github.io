@@ -28,6 +28,11 @@ section {
 	float: center;
 }
 
+.carousel-inner {
+	width: 500px;
+	height: 250px;
+}
+
 #avatarhead {
 	vertical-align: middle;
 	width: 250px;
@@ -167,11 +172,6 @@ td:hover {
 	clear: both;
 	display: table;
 }
-
-.carousel-inner {
-	width: 500px;
-	height: 250px;
-  }
 
 #results h5 {
 	padding: 3%;
