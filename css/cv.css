@@ -64,6 +64,15 @@ section {
     transform: scale(1.1);
 }
 
+.input-group {
+	margin-bottom: 12%;
+}
+
+.input-group:hover {	
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
 #content {
 	margin: 0 auto;
 	max-height: 180px;
