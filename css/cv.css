@@ -5,43 +5,32 @@
  */
 
 header {
-	height: 100vh;
 	background-color: grey;
-	padding-top: 50%;
-}
-
-@media (min-width: 992px) {
-  header {
-    padding: 100px 0 100px;
-  }
+	padding-top: 8em;
+	padding-bottom: 4em;
 }
 
 section {
-	height: 100vh;
 	padding: 50px 0;
 	color: grey;
 }
 
 #education {
-	height: 100vh;
 	background-color: grey;
 	color: white;
 }
 
 #projects {
-	height: 100vh;
 	background-color: grey;
 	color: white;
 }
 
 #contact {
-	height: 100vh;
 	background-color: grey;
 	color: white;
 }
 
 #carousel {
-	height: 100vh;
 	width: 50%;
 	margin: auto;
 }
@@ -78,8 +67,7 @@ section {
 }
 
 #content {
-		margin: 0 auto;
-
+	margin: 0 auto;
 	max-height: 180px;
 	overflow: hidden;
 
@@ -91,11 +79,6 @@ section {
 	max-height: 100px;
 	/* Set transitions */
 	transition: max-height 0.7s;
-}
-
-tr:hover {
-	-webkit-transform: scale(1.1);
-    transform: scale(1.1);
 }
 
 .borderless td, .borderless th {
