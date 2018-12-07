@@ -31,8 +31,7 @@ section {
 }
 
 #carousel {
-	width: 50%;
-	margin: auto;
+	float: center;
 }
 
 #avatarhead {
@@ -122,6 +121,17 @@ h3 {
 	padding: 10px 15px;
 }
 
+.nav-tabs {
+	border: none;
+	margin-bottom: 2%;
+}
+
+.nav-tab>li>a:hover {
+	border: none;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .nav-tabs .active a,
 	.nav-tabs .active a:hover {
 		background-color: white;
@@ -135,6 +145,11 @@ a {
 
 table {
 	border: none;
+}
+
+td:hover {
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1)
 }
 
 .zoom {
@@ -159,9 +174,10 @@ table {
 	display: table;
 }
 
-.nav-tabs {
-	border: none;
-}
+.carousel-inner {
+	width: 500px;
+	height: 250px;
+  }
 
 #results h5 {
 	padding: 3%;
@@ -302,7 +318,18 @@ p {
 	border-radius: 8px;
 }
 
-#myModay p {
+#myModal.backdrop {
+	background-color: grey;
+}
+
+#myModal .btn {
+	border-color: grey;
+	background-color: grey; 
+	color: white;
+}
+
+#myModal p {
+	text-align: center;
 	color: grey;
 	font-size: 20px;
 }
