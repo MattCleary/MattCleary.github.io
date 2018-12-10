@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>Matthew Cleary</title>
+    <link rel="icon" type="image" href="images/profile.jpg">
 
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -29,7 +30,6 @@
 
   <body id="page-top">
 
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"> <img src="images/profile.jpg" alt="Avatar" class="avatarnav"> Matthew Cleary </a>
@@ -57,7 +57,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#">References</a>
+              <a class="nav-link js-scroll-trigger" href="references.html" target="_blank">References</a>
             </li>
           </ul> 
         </div>
@@ -72,14 +72,35 @@
       </div>
       <div class="col-md-8 mx-auto text-center">
         <button type="submit" class="btn" style="margin: 5%"  onclick="window.open('CVForMatthewCleary.docx')"> <i class="fa fa-file-text-o" style="font-size:24px;"></i> Download My CV</button>
-        <button type="submit" class="btn" style="margin: 5%"  onclick="window.location.href='#contact'"> <i class="fa fa-address-card-o" style="font-size:24px"></i> Contact Me</button>
+        <button type="submit" class="btn" style="margin: 5%" data-toggle="modal" data-target="#contact-modal"> <i class="fa fa-address-card-o" style="font-size:24px"></i> Contact Me</button>
+          <div class="modal fade" id="contact-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Contact Me</h5>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h5>You can contact me via:</h5>  
+                  <p style="font-size: 20px;">
+                      <i class="fa fa-phone"></i> Phone: 085 7756 925<br>
+                      <i class="fa fa-envelope"></i> Email: matthew.cleary.96@gmail.com<br>
+                      <i class="fa fa-linkedin-square"></i> LinkedIn: <a style="color: grey" target="_blank" href="https://www.w3schools.com/bootstrap4/default.asp"><strong>Matthew Cleary</strong></a>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn" data-dismiss="modal">Close</button>
+                </div>          
+              </div>
+            </div>
+        </div>
       </div>
       <div class="col-md-4 mx-auto text-center">
         <div class="row">
           <div class="input-group">
               <input class="form-control border-secondary py-2" type="search" placeholder="Search...">
               <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button">
+                  <button id="search" class="btn btn-outline-secondary" type="button">
                       <i class="fa fa-search"></i>
                   </button>
               </div>
@@ -87,7 +108,7 @@
         </div>
       </div>
       <div class="col-md-8 mx-auto text-center">
-        <a class="LI-simple-link" href='www.linkedin.com/in/matthewcleary96' target="_blank"><i class="fa fa-linkedin-square" style="font-size:50px"></i></a>
+        <a class="LI-simple-link" href='https://www.linkedin.com/in/matthewcleary96' target="_blank"><i class="fa fa-linkedin-square" style="font-size:50px"></i></a>
         <a class="git-simple-link" href='https://github.com/MattCleary' target="_blank"><i class="fa fa-git" style="font-size:50px; margin-left: 3%"></i></a>
         </div>
     </header>
@@ -95,31 +116,37 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 mx-auto" style="margin-bottom: 4%">
+          <div class="col-md-8 mx-auto" style="margin-bottom: 2%">
             <h3>About me</h3>
           </div>
-          <div class="col-md-8 mx-auto" style="margin-bottom: 4%">
-            <p id="content">My name is Matthew Cleary. I am a 22 year old Data Analytics student in IT Tallght. <br>
-              Currently I am in my final year of my Bachelors Degree. For the first three years of my degree, I persued Software Development.
-              I received good grades and secured a six-month intership with Bank of America Merill Lynch, as a result.
-              After completing my internship, I realised I did not enjoy development as much as I thought. 
-              I considered whether I wanted to contiue with development for some time. When college started back, there was the option of doing Data Analytics.
-              I decided to take on the opportunity and specialise in Data Analytics for my final year.<span id="dots">...</span><span id="more"><br>
-              Insert more info               
+          <div class="col-md-8 mx-auto" style="margin-bottom: 2%">
+            <p id="content">My name is Matthew Cleary. I am a 22 year old Data Analytics student in IT Tallaght.
+              Currently, I am in my final year of my Bachelors Degree. For the first three years of my degree, I persued Software Development 
+              and have decided to specialise in Data Analytics for my final year. <span id="dots"></span><span id="more"><br>
+              I would describe myself as hard working, focused, and a team-leader. I have developed good coding, database, design, and analysis skills
+              since I started my degree. I try my best to get good grades and keep a strong GPA. I put in a lot of hours towards my work which
+              has paid off so far. <br>
+              The highlight of my degree has been my Intership with Bank of America Merrill Lynch. I completed my intership with BAML in 2018.
+              During my time there, I accomplished some of my proudest achievements. I learned a new language in Scala. 
+              I gained the skills to use many technologies, such as IntelliJ and ITRS. I took part in an Intern project where I excelled and was given
+              the role of team lead. I loved my time on this project and took full advantage of the opportunity to be team lead. I received many compliments
+              and was congratulated for how well I done in my role as team lead. As a result of the hard work and dedication put towards my internship, I received an offer to return in 2019 as a graduate. I am quite proud of this
+              achievement and am looking forward to starting back.  
               </span>
             </p>       
           </div>
           <div class="col-md-8 mx-auto" style="margin-bottom: 4%">
             <button class="btn" style="color: white" onclick="showMore()" id="show-more">Show More</button>
           </div>
+
           <div class="col-lg-8 mx-auto" style="margin-bottom: 4%">
               <div id="carousel" class="carousel slide" data-ride="carousel" style="margin: auto; margin-left: 10%">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img class="d-block w-100" src="images/baml.png" alt="First slide">
+                      <a href="https://www.bofaml.com/content/boaml/en_us/home.html" target="_blank"><img class="d-block w-100" src="images/baml.png" alt="BAML"></a>
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block w-100" src="images/itt.png" alt="Second slide">
+                        <a href="https://www.it-tallaght.ie/" target="_blank"><img class="d-block w-100" src="images/itt.png" alt="ITT"></a>
                     </div>
                   </div>
                 </div>
@@ -387,7 +414,7 @@
             <p>I have gained many skills during my years in college and during my internship. Each year, I thrive to learn how to use even more technologies and gain more skills. 
               When introduced to something new, I try to understand how it works to the best of my ability and use it as much as possible. Practice makes perfect.</p>
           </div>
-          <div class="col-md-8 mx-auto" style="margin-top: 2%">
+          <div class="col-md-8 mx-auto" style="margin-top: 1%">
             <br>
               <span class="progress-title">Software Development (Java, C++, Scala, Python)</span>              
               <span class="progress-percent">85%</span>
@@ -449,20 +476,23 @@
               <h3>Projects</h3>          
             </div>
             <div class="col-sm-8 mx-auto">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin: 5%">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin: 5%; margin-left: 0%">
                     <div class="panel panel-default">
                       <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title text-center">
+                        <h4 class="panel-title text-left">
                           <a role="button" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" href="#collapse1"><i class="fa fa-bar-chart-o"></i> Final Year Data Analytics Project</a>
                         </h4>
                       </div>
                       <div id="collapse1" class="panel-collapse collapse show" role="tab-panel" aria-labelledby="headingOne">
-                        <div class="panel-body text-center">
+                        <div class="panel-body text-left">
                           <img src="images/data.png" class="img-circle img-responsive" id="project-img">
                           <p style="color: white;">I am currently working on my Final Year Data Analytics Project.
-                            I orignally had an idea but I recently discovered a large blocker that stopped me in my path.
-                            More ideas are coming about, and being finalised. My next step is to find a useable dataset to work with. 
-                            With this data, I plan to build several models and run tests on the data and come up with some predictions.
+                            I orignally had the idea of carrying out an Explorative Analysis on the Homelessness crisis in Ireland, 
+                            but I recently discovered a large blocker that stopped me in my path. The data that I gathered was not in a format that 
+                            I could work with and I would not be able to make a prediction on it as it was only statistical data. <br> I am still 
+                            discussing ideas and looking for a suitable dataset to work with. Fundamentally, I wish to find a suitable dataset containing,
+                            multiple instances. With this, I plan to build several models to make a prediction on this data. It is a work in progress at the
+                            moment. Stay tuned for updates!
                           </p>
                         </div>
                       </div>
@@ -470,15 +500,15 @@
                   </div>
             </div>
             <div class="col-sm-8 mx-auto">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin: 5%">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin: 5%; margin-left: 0%">
                     <div class="panel panel-default">
                       <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title text-center">
+                        <h4 class="panel-title text-left">
                           <a role="button" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" href="#collapse2"><i class="fa fa-ticket"></i> Ticket Store</a>
                         </h4>
                       </div>
                       <div id="collapse2" class="panel-collapse collapse in" role="tab-panel" aria-labelledby="headingTwo">
-                        <div class="panel-body text-center">
+                        <div class="panel-body text-left">
                           <img src="images/music.png" class="img-circle img-responsive" id="project-img">
                           <p style="color: white;">Designed for our Second Year Project. 
                             JavaPlay Framework CRUD Application. TicketStore is an online event booking system. Users can buy tickets for music, sporting, comedy events and more.
@@ -486,29 +516,29 @@
                             that account will have special access to creating, updating and deleting events and tickets. They can also handle user queries, edit user settings and much more.
                             We recieved an A for our efforts.
                           </p>
-                          <a class="git-simple-link" href='https://github.com/MattCleary/TicketStore' target="_blank"><i class="fa fa-git" style="font-size:36px; margin: 3%"></i></a>
+                          <a class="git-simple-link-project" href='https://github.com/MattCleary/TicketStore' target="_blank"><i class="fa fa-git" style="font-size:36px; margin: 3%"></i></a>
                         </div>
                       </div>
                     </div>
                   </div>
             </div>
             <div class="col-sm-8 mx-auto">
-                <div class="panel-group"  id="accordion" role="tablist" aria-multiselectable="true" style="margin: 5%">
+                <div class="panel-group"  id="accordion" role="tablist" aria-multiselectable="true" style="margin: 5%; margin-left: 0%">
                     <div class="panel panel-default">
                       <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title text-center">
+                        <h4 class="panel-title text-left">
                           <a data-toggle="collapse" href="#collapse3"><i class="fas fa-shoe-prints"></i> Sourced Soles</a>
                         </h4>
                       </div>
                       <div id="collapse3" class="panel-collapse collapse in" role="tab-panel" aria-labelledby="headingThree">
-                        <div class="panel-body text-center">
+                        <div class="panel-body text-left">
                           <img src="images/shoe.png" class="img-circle img-responsive" id="project-img">
                           <p style="color: white;">Web Store developed using the Java Play Framework. 
                             Developed in my First Year with two other Students, Sourced Soles is an only store where users could purchase hard to find shoes.
                             The website has full checkout functionality as well as a complete order detail, sign up, login, and transaction history.
                             We recieved an A grade for our efforts.
                           </p>
-                          <a class="git-simple-link" href='https://github.com/MattCleary/SourcedSoles' target="_blank"><i class="fa fa-git" style="font-size:36px; margin: 3%"></i></a>
+                          <a class="git-simple-link-project" href='https://github.com/MattCleary/SourcedSoles' target="_blank"><i class="fa fa-git" style="font-size:36px; margin: 3%"></i></a>
                         </div>
                       </div>
                     </div>
@@ -530,12 +560,12 @@
                   <div class="card-body">
                     <h5 class="card-title">Bank of America Merrill Lynch</h5>
                     <h6 class="card-subtitle mb-2 text-muted">GMOT Securities (Feb. 2018 - Aug. 2018)</h6>
-                    <p class="card-text">This year, I completed a six-month internship with BAML, from February to August.
+                    <p class="card-text text-left">This year, I completed a six-month internship with BAML, from February to August.
                       I was part of their Securities division and a member of two teams who worked closely together. 
-                      I worked of various projects within and outside my team. Within the team, I was mainly involved with developing and maintaining a web application used to find trades.
+                      I worked on various projects within and outside my team. Within the team, I was mainly involved with developing and maintaining a web application used to find trades.
                       This app is used by BAML teams all around the world. The app is developed using Scala, this was a first for me. I learned the language quickly as I had previous experience in Java, I found Scala quite similar.
-                      I worked on an intern project with other interns, where I acted as the team lead. We had to create a dashboard for monitoring client money feeds withn the bank.
-                      I throughly wnjoyed my time on this project and loved being team lead. I recieved great feedback from my role in this project. It was a real success.
+                      I worked on an intern project with other interns, where I acted as the team lead. We had to create a dashboard for monitoring client money feeds within the bank.
+                      I thoroughly enjoyed my time on this project and loved being team lead. I recieved great feedback from my role in this project. It was a great success.
                     </p>
                   </div>
                   </div>
@@ -546,11 +576,12 @@
                     <img class="card-img-top" src="images/dunnes.png" id="card2-img">
                     <div class="card-body">
                       <h5 class="card-title">Dunnes Stores</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Checkout Supervisor (Dec. 2015 - Jan. 2018)</h6>
-                      <p class="card-text">I worked in Dunnes Stores Part-time for just over two years. I started off as a checkout operator for a few months.
+                      <h6 class="card-subtitle mb-2 text-muted">Checkout Supervisor (Dec. 2014, Dec. 2015 - Jan. 2018, & Sept. 2018 - Present.)</h6>
+                      <p class="card-text text-left">I worked in Dunnes Stores Part-time for just over two years. I started off as a checkout operator for a few months.
                         I was then moved to a more independent role as Self-Service Operator. During my time in this role I got to cover for the supervisors when needed.
                         Whenever I got this chance, I took full advantage and showed how capable I was of fufilling the role day to day. My efforts were noted and I was made Supervisor.
-                        During my time as supervisor, I developed my teamwork and leadership skills. 
+                        During my time as supervisor, I developed my teamwork and leadership skills. I was greatly trusted in my role and felt that I was quite dependable.
+                        <br>Recently, I have returned to Dunnes to work on the shop floor. This is just a temporary job to keep me ging through college!
                       </p>
                     </div>
                   </div>
@@ -565,9 +596,9 @@
           <div class="col-md-8 mx-auto" id="contact-me">
             <h3>Contact me</h3>
             <p> Feel free to contact me at any time!</p>
-            <p> <i class="fa fa-location-arrow" style="color:white; margin-left: 2%"></i> Institute of Technology Tallaght</p>
+            <p> <i class="fa fa-location-arrow" style="color:white"></i> Institute of Technology Tallaght</p>
             <p> <i class="fa fa-phone" style="color:white"></i>  085 7756 925  </p>
-            <p> <i class="fa fa fa-envelope" style="color:white"></i> matthew.cleary.96@gmail.com  </p>
+            <p> <i class="fa fa fa-envelope" style="color:white; margin-bottom: 2%"></i> matthew.cleary.96@gmail.com  </p>
           </div>
           <div class="col-md-8 mx-auto">        
                 <form id="reused_form">
@@ -586,7 +617,7 @@
 
                    <button type="button" class="btn" style="margin-left: 43%" data-toggle="modal" data-target="#myModal"> Send <i class='fas fa-check'></i></button>
                     
-                    <div id="myModal" class="modal fade" role="dialog" style="margin-top: 20%">
+                    <div id="myModal" class="modal fade">
                       <div class="modal-dialog modal-sm">                        
                         <div class="modal-content">
                           <div class="modal-header">
@@ -610,13 +641,18 @@
 
 
     <footer class="py-1 bg-dark">
-      <div class="container">
-          <p class="text-center" style="margin-bottom: 2%">Designed by Matthew Cleary, 2018</p>
-          <ul class="social_footer_ul" style="margin-left: 40%">
-          <li><a href='www.linkedin.com/in/matthewcleary96' target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/MattCleary" target="_blank"><i class="fab fa-git"></i></a></li>
-          </ul>
-      </div>       
+      <div class="container-fluid">
+        <div class="col-md-8" style="margin-left: 40%">
+          <p class="text-left" style="margin-bottom: 2%">Designed by Matthew Cleary, 2018</p>
+          <ul class="social_footer_ul">
+            <li><a href='https://www.linkedin.com/in/matthewcleary96' target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/MattCleary" target="_blank"><i class="fab fa-git"></i></a></li>            
+          </ul> 
+        </div>  
+        <div class="col-md-8" style="margin-left: 43.5%">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><button class="btn bg-dark"><i class="far fa-arrow-alt-circle-up"> Back to Top</i></button></a>
+        </div>       
+      </div>
     </footer>
       </footer> 
 

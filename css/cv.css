@@ -24,6 +24,10 @@ section {
 	color: white;
 }
 
+#contact-modal {
+	color: grey;
+}
+
 #carousel {
 	float: center;
 }
@@ -59,6 +63,10 @@ section {
     transform: scale(1.1);
 }
 
+.nav-item:active {
+	color: white;
+}
+
 .nav-item:hover {		
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -75,16 +83,11 @@ section {
 
 #content {
 	margin: 0 auto;
-	max-height: 180px;
-	overflow: hidden;
-
-	/* Set Transitions */
 	transition: max-height 0.7s;
 }
 
 #content.open {
 	max-height: 100px;
-	/* Set transitions */
 	transition: max-height 0.7s;
 }
 
@@ -93,7 +96,7 @@ section {
 }
 
 h3 {
-	text-align: center;
+	text-align: left;
 }
 
 #more {
@@ -174,7 +177,7 @@ td:hover {
 }
 
 .zoom h6 {
-	text-align: center;
+	text-align: left;
 }
 
 .row::after {
@@ -183,8 +186,9 @@ td:hover {
 }
 
 #results h5 {
-	padding: 3%;
-	text-align: center;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	text-align: left;
 }
 
 #results h6 {
@@ -252,13 +256,19 @@ p {
 	color: grey;
 	margin-top: 7.5%;
 	font-size: 15px;
+	text-align: left;
 }
 
 #project-img {
 	vertical-align: middle;
 	width: 150px;
 	height: 150px;
-	padding-right: 5px;
+	margin-left: 40%;
+	margin-top: 2%;
+}
+
+.git-simple-link-project {
+	margin-left: 43%;
 }
 
 #card2-img {
@@ -278,27 +288,28 @@ p {
     transform: scale(1.1);
 }
 
-.social_footer_ul { 
-	display:table;
-	list-style-type:none;  
+.social_footer_ul {
+	display: table;
+	list-style-type: none;  
 }
 
-.social_footer_ul li { 
-	padding-left:20px;
-	float:left; 
+.social_footer_ul li {
+	padding-left: 20px;
+	float: left; 
 }
 
 .social_footer_ul li a { 
 	color:grey; 
-	border:1px solid grey; 
-	padding:8px;
+	border: 1px solid grey; 
+	padding: 8px;
 	border-radius: 50%;
+	justify-content: center;
 }
 
 .social_footer_ul li i {  
-	width:20px; 
-	height:20px; 
-	text-align:center;
+	width: 20px; 
+	height: 20px; 
+	text-align: center;
 }
 
 .social_footer_ul li a:hover {
@@ -307,7 +318,7 @@ p {
 }
 
 #contact-me p {
-	text-align: center;
+	text-align: left;
 	color: white;
 	font: 15px sans-serif;
 }
@@ -321,10 +332,6 @@ p {
 	border-radius: 8px;
 }
 
-#myModal.backdrop {
-	background-color: grey;
-}
-
 #myModal .btn {
 	border-color: grey;
 	background-color: grey; 
@@ -332,7 +339,12 @@ p {
 }
 
 #myModal p {
-	text-align: center;
+	text-align: left;
 	color: grey;
 	font-size: 20px;
+}
+
+#footer-btn {
+	float: right;
+	margin-bottom: 20%;
 }
