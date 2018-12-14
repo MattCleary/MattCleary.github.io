@@ -1,3 +1,8 @@
+#mainNav,
+.footer{
+	max-width: 100vw !important;
+}
+
 header {
 	background-color: grey;
 	padding-top: 8em;
@@ -30,11 +35,13 @@ section {
 
 #carousel {
 	float: center;
+	border-top-left-radius: 12px;
 }
 
 .carousel-inner {
 	width: 500px;
 	height: 250px;
+	max-width: 100%;
 }
 
 #avatarhead {
@@ -288,35 +295,6 @@ p {
     transform: scale(1.1);
 }
 
-.social_footer_ul {
-	display: table;
-	list-style-type: none;  
-}
-
-.social_footer_ul li {
-	padding-left: 20px;
-	float: left; 
-}
-
-.social_footer_ul li a { 
-	color:grey; 
-	border: 1px solid grey; 
-	padding: 8px;
-	border-radius: 50%;
-	justify-content: center;
-}
-
-.social_footer_ul li i {  
-	width: 20px; 
-	height: 20px; 
-	text-align: center;
-}
-
-.social_footer_ul li a:hover {
-	color: white;
-	background-color: #007bff;
-}
-
 #contact-me p {
 	text-align: left;
 	color: white;
@@ -344,7 +322,11 @@ p {
 	font-size: 20px;
 }
 
-#footer-btn {
+.footer-btn {
 	float: right;
 	margin-bottom: 20%;
+}
+
+footer a {
+	padding: 5px;
 }
